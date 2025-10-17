@@ -35,7 +35,42 @@
         <div id="error" class="text-sm text-red-600"></div>
       </div>
     </section>
-
+    
+    <!-- Current weather -->
+    <section id="current-section" class="mt-4 bg-white/80 rounded-lg p-4 shadow hidden">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 id="location-name" class="text-xl font-semibold"></h2>
+            <p id="local-time" class="text-sm text-gray-600"></p>
+          </div>
+          <div class="text-right">
+            <div id="temp" class="text-4xl font-bold"></div>
+            <div id="condition" class="text-sm text-gray-600 flex items-center gap-2"></div>
+          </div>
+        </div>
+  
+        <div id="alert-banner" class="mt-4 hidden p-3 rounded bg-red-50 border border-red-200 text-red-700"></div>
+  
+        <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-sm text-gray-700">
+          <div class="p-3 bg-slate-50 rounded shadow-sm">Humidity: <span id="humidity"></span>%</div>
+          <div class="p-3 bg-slate-50 rounded shadow-sm">Wind: <span id="wind"></span> kph</div>
+          <div class="p-3 bg-slate-50 rounded shadow-sm">Feels like: <span id="feelslike"></span>°C</div>
+          <div class="p-3 bg-slate-50 rounded shadow-sm">UV Index: <span id="uv"></span></div>
+        </div>
+  
+    </section> 
+    
+    <!-- Extended forecast -->
+    <section id="forecast-section" class="mt-4 hidden">
+        <h3 class="font-semibold mb-2">5-day Forecast</h3>
+        <div id="forecast-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3"></div>
+      </section>
+  
+      <!-- Footer / credits -->
+      <footer class="mt-6 text-xs text-gray-500 text-center">
+        Data from <a href="https://www.weatherapi.com/" target="_blank" rel="noopener noreferrer" class="underline">WeatherAPI.com</a>. Replace <code>API_KEY</code> in <code>script.js</code> with your key.
+      </footer>
+    </div>
 
   <script src="script.js"></script>
 </body>
