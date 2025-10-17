@@ -1,3 +1,7 @@
+// Weather Forecast App - Fixed Script
+const apiKey = "0be264f63c6541ceb46114249251710"; // Replace with your WeatherAPI key
+const baseUrl = "https://api.weatherapi.com/v1";
+
 // DOM Elements (matching HTML)
 const cityInput = document.getElementById("city-input");
 const searchForm = document.getElementById("search-form");
